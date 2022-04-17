@@ -5,13 +5,13 @@ import UsersList from "./Components/Users/UsersList";
 
 function App() {
 
-    const [users, setUsers] = useState([])
+    const [usersList, setUsersList] = useState([])
 
 
     return (
         <div>
-            <AddUser addUser={setUsers}/>
-            <UsersList users={users}/>
+            <AddUser OnAddUser={setUsersList}/>
+            <UsersList users={usersList}/>
         </div>
     );
 }
